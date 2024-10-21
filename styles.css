@@ -1,0 +1,152 @@
+body {
+    background-color: #f9f0f7;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    flex: 1;
+    background-color: #f1e7ea;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    max-width: 150px;
+}
+
+.tab.active {
+    background-color: #f7c9e0;
+    color: #333;
+}
+
+.profile-section {
+    border: 2px solid #f7c9e0;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 3px solid #f7c9e0;
+}
+
+.bio {
+    background-color: #fef4f8;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 2em; 
+}
+
+.bio h3 {
+    margin: 0;
+    color: #77CDFF;
+    font-size: 20px;
+}
+
+.bio p {
+    color: #555;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.social-media {
+    background-color: #fef4f8;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.social-media h3 {
+    margin: 0;
+    color: #77CDFF;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #f7c9e0;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #bba3ac;
+}
+
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tab {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .bio, .social-media {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tab {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+
+    .bio, .social-media {
+        font-size: 0.8em;
+    }
+}
